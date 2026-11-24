@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <h1 id="title">Should Melodía J. Parker Run for Senate? Survey Form</h1>
+        <p id="description">If you think Melodía J. Parker should run (or not) for Senate, please fill out this survey form.</p>
+    <form id="survey-form">
+        <fieldset>
+            <legend>Your Information</legend>
+                
+                <label for="name" id="name-label">Name</label>
+                <input id="name" type="text" required placeholder="Your name">
+                
+                <br>
+                
+                <label for="email" id="email-label">Email</label>
+                <input id="email" type="email" required placeholder="example@email.com">
+                
+                <br>
+                
+                <label for="number" id="number-label">Age</label>
+                <input type="number" id="number" min="18" max="100" required placeholder="Your age">
+        </fieldset>
+
+        
+        <fieldset>
+            <legend>Should Melodía J. Parker run for Senate?</legend>
+                
+                <select id="dropdown">
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Does Melodía J. Parker have a chance in the election?</legend>
+        
+                <input type="radio" id="chance-yes" value="yes" name="chance">
+                <label for="chance-yes">Yes</label>
+
+                <input type="radio" id="chance-no" value="no" name="chance">
+                <label for="chance-no">No</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>What issues should Melodía J. Parker focus on?</legend>
+
+            <input type="checkbox" value="defund" name="issues">
+            <label for="defund">Defund ICE</label>
+
+            <input type="checkbox" value="israel" name="issues">
+            <label for="israel">No Money to Israel</label>
+
+            <input type="checkbox" value="healthcare" name="issues">
+            <label for="healthcare">Healthcare for All</label>
+
+            <input type="checkbox" value="accountable" name="issues">
+            <label for="accountable">Hold Everyone Accountable</label>
+
+            <input type="checkbox" value="data" name="issues">
+            <label for="data">No Data Centers</label>
+        </fieldset>
+
+        <br>
+
+        <textarea id="comments" name="comments" rows="5" cols="20" placeholder="Any additional comments?"></textarea>
+
+        <button type="submit" id="submit">Send</button>
+
+    </form>
+    </body>
+</html>
